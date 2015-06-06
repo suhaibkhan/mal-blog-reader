@@ -1,0 +1,191 @@
+
+/*
+Stylesheet for options page of chrome extension Malayalam Blog Reader
+*/
+
+@font-face { font-family: ML-NILA01; src: url('../fonts/ML-NILA01.ttf'); }
+@font-face { font-family: ML-NILA03; src: url('../fonts/ML-NILA03.ttf'); }
+
+body {
+	background: #F5F5F5;
+	color: #666;
+	font: normal 16px/1.3em ML-NILA01;
+	text-shadow: 0 0 1px rgba(0,0,0,0.2);
+}
+a {
+	color: #666;
+}
+a:hover{
+	color: #000;
+}
+
+.black_btn{
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(125,126,125,1)), color-stop(100%,rgba(14,14,14,1)));
+	background-color: #000;
+	border: 0px black none;
+	color: #FFF;
+	cursor: pointer;
+	padding:8px 16px;
+	-webkit-border-radius: 5px;
+}
+.black_btn:hover{
+	background: -webkit-gradient(linear, left bottom, left top, color-stop(0%,rgba(125,126,125,1)), color-stop(100%,rgba(14,14,14,1)));
+}
+.eng {
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: 12px;
+}
+.pclose {
+	padding: 3px;
+	position: absolute;
+	right: -10px;
+	top: -10px;
+}
+.pcontent input {
+	width: 470px;
+}
+.ploading {
+	display: none;
+	font-size: 14px;
+	padding: 5px 0;
+	margin: 0 auto;
+	width: 90px;
+}
+.ploading img {
+	float:left;
+	margin-right: 5px;
+}
+.ploaded {
+	display: none;
+}
+.ploaded table{
+	margin-top: 10px;
+	width: 100%;
+}
+.ploaded td{
+	padding: 10px;
+	vertical-align: middle;
+}
+.ploaded td:first-child{
+	text-align: right;
+	width: 140px;
+}
+.ploaded td:nth-child(2){
+	padding: 0;
+}
+.ploaded td input {
+	width: 98%;
+}
+.ploaded tr{
+	border: 1px solid #CCC;
+}
+.pmessage {
+	color: #F00;
+	display: none;
+	padding: 5px 0;
+}
+.tab {
+	background: #FFF;
+	border: 1px solid #CCC;
+	display: none;
+	padding: 20px;
+}
+
+#about {
+	background: #FFF;
+	border: 1px solid #CCC;
+	font: normal 16px/1.3em ML-NILA01;
+	margin-top: 20px;
+	padding: 20px;
+}
+#about .notice{
+	font: bold 16px/1.3em ML-NILA03;
+}
+#bloglist table{
+	table-layout: fixed;
+	width: 100%;
+}
+#bloglist tr{
+	border: 1px solid #CCC;
+	border-top: none;
+}
+#bloglist tr:first-child{
+	border-top: 1px solid #CCC;
+}
+#bloglist tr:last-child{
+	border: none;
+	text-align: right;
+}
+#bloglist td{
+	padding: 5px;
+	word-wrap: break-word;
+}
+#bloglist td img{
+	cursor: pointer;
+}
+#bloglist td:nth-child(2){
+	width: 20px;
+}
+#mask {
+	background-color: #000;
+	display: none;
+	position: absolute;
+	top: 0;
+	z-index: 9000;
+}
+#msg {
+	color: #090;
+	display: none;
+}
+#popup {
+	background-color: #FFF;
+	border: 1px solid #CCC;
+	color: #000;
+	display: none;
+	padding: 20px;
+	position: fixed;
+	width: 500px;
+	z-index: 9999;
+}
+#popup img {
+	cursor: pointer;
+	margin-left: 5px;
+}
+#tabs ul {
+	margin: 0 0 7px 30px;
+}
+#settings table {
+	table-layout: fixed;
+	width: 100%;
+}
+#settings td {
+	padding: 5px;
+}
+#settings tr:last-child {
+	text-align: right;
+}
+#tabs li {
+	border: 1px solid #CCC;
+	cursor: pointer;
+	display: inline;
+	padding: 10px;
+}
+#tabs .current {
+	background: #FFF;
+	border-bottom: 0px;
+	cursor: default;
+}
+#tabs .hover {
+	color: #333;
+	background: #CE6;
+}
+#tab1 {
+	display: block;
+}
+#wrapper {
+	background-image: url(../images/banner.png);
+	background-repeat: no-repeat;
+	margin: 50px auto 0 auto;
+	padding-top: 100px;
+	width:640px;
+}

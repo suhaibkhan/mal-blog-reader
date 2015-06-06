@@ -1,0 +1,88 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+	<meta charset=utf-8 />
+	<link rel="stylesheet" href="css/reset.css" />
+	<link rel="stylesheet" href="css/options.css" />
+	<script src="js/jquery-1.7.2.min.js"></script>
+	<script src="js/options.js"></script>
+</head>
+<body>
+	<div id="mask"></div>
+	<div id="popup">
+		<img src="images/cancel.png" class="pclose"/>
+		<div class="pcontent">
+			ബ്ലോഗിന്‍റെ ലിങ്ക് എന്‍റര്‍ ചെയ്യുക :<br />
+			<input name="bloglink" value="http://" type="url"><img src="images/add.png" id="pbtnAddLink" />
+		</div>
+		<div class="ploaded">
+			ബ്ലോഗിന്‍റെ വിവരങ്ങളില്‍ മാറ്റമുണ്ടേല്‍ തിരുത്തുക :
+			<table>
+				<tr>
+					<td>ബ്ലോഗിന്‍റെ പേര്</td>
+					<td>:</td>
+					<td><input name="blogtitle" type="text"></td>
+				</tr>
+				<tr>
+					<td>ബ്ലോഗിന്‍റെ RSS ഫീഡ് ലിങ്ക്</td>
+					<td>:</td>
+					<td><input name="blogfeedlink" type="url"></td>
+				</tr>
+				<tr>
+					<td>ബ്ലോഗ്‌ ഫീഡ് പേജിംഗ് പാറ്റേണ്‍</td>
+					<td>:</td>
+					<td><input name="blogpagepattern" type="text"></td>
+				</tr>
+				<tr>
+					<td>ഒരു ഫീഡ് പേജിലെ പോസ്റ്റുകളുടെ എണ്ണം</td>
+					<td>:</td>
+					<td><input name="blognumposts" type="number"></td>
+				</tr>
+			</table>
+			<div style="text-align:right;margin-top: 10px">
+				<input class="black_btn" id="blogAdd" type="button" value="ബ്ലോഗ്‌ ലിസ്റ്റില്‍ ചേര്‍ക്കുക">
+			</div>
+			<div class="pmessage"></div>
+		</div>
+		<div class="ploading"><img src="images/loading.gif" />ലോഡിംഗ്...</div>
+		<div class="pmessage">എറര്‍: ഈ ലിങ്ക് ബ്ലോഗ്‌ ലിസ്റ്റിലേക്ക് ചേര്‍ക്കാന്‍ സാധ്യമല്ല.</div>
+	</div>
+	<div id="wrapper">
+		<div id="tabs">
+			<ul>
+				<li class="current" id="btn1">ബ്ലോഗ്‌ ലിസ്റ്റ്</li><li id="btn2">ക്രമീകരണങ്ങള്‍</li>
+			</ul>
+			<div id="tab1" class="tab">
+				<div id="bloglist">
+					<table>
+						<tr>
+							<td colspan = "2">
+								പുതിയ ബ്ലോഗ്‌ ലിസ്റ്റില്‍ ചേര്‍ക്കുക
+								<img src="images/add.png" id="btnAdd"/>
+							</td>
+						</tr>
+					</table>
+				</div>
+			</div>
+			<div id="tab2" class="tab">
+				<div id="settings">
+					<table>
+						<tr>
+							<td><input name="autoupdate" value="autoupdate" type="checkbox">എല്ലാ <input name="updateinterval" type="number" min="0"  disabled="disabled" /> മിനിറ്റിലും പുതിയ പോസ്റ്റുകള്‍ വന്നിടുണ്ടോ എന്നു നോക്കുക. </td>
+						</tr>
+						<tr>
+							<td><input name="updatesettings" value="ക്രമീകരണങ്ങള്‍&nbsp;പുതുക്കുക" type="button" class="black_btn"/></td>
+						</tr>
+					</table>
+				</div>
+				<div id="msg">ക്രമീകരണങ്ങള്‍ പുതുക്കപ്പെട്ടു</div>
+			</div>
+		</div>
+		<div id="about">
+			ഗൂഗിള്‍ ക്രോമിനു വേണ്ടി ഈ എക്സ്റ്റന്‍ഷന്‍ (<strong class="notice">മലയാളം ബ്ലോഗ്‌ റീഡര്‍</strong>) നിര്‍മിച്ച വ്യക്തിയുടെ പേര് <strong class="notice">സുഹൈബ് ഖാന്‍</strong> എന്നാകുന്നു. ഈ എക്സ്റ്റന്‍ഷന്‍-നെക്കുറിച്ചുള്ള നിങ്ങളുടെ അഭിപ്രായങ്ങളും നിര്‍ദേശങ്ങളും അതുപോലെ തന്നെ എന്തേലും കുഴപ്പങ്ങള്‍ ഉണ്ടേല്‍ അതും എനിക്കെഴുതുക.<br /><br />
+			എന്‍റെ ഇമെയില്‍ വിലാസം : <strong class="eng"><a href="mailto:suhaibklm@gmail.com" target="_blank">suhaibklm@gmail.com</a></strong><br />
+			എന്‍റെ ബ്ലോഗ്‌ വിലാസം : <strong class="eng"><a href="http://malayalideblog.wordpress.com" target="_blank">malayalideblog.wordpress.com</a></strong>
+		</div>
+	</div>
+</body>
+</html>

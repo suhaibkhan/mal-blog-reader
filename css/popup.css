@@ -1,0 +1,113 @@
+/*
+Stylesheet for popup of chrome extension Malayalam Blog Reader
+*/
+
+@font-face { font-family: ML-NILA01; src: url('../fonts/ML-NILA01.ttf'); }
+@font-face { font-family: ML-NILA03; src: url('../fonts/ML-NILA03.ttf'); }
+
+a {
+	color: #000;
+}
+body {
+	padding: 2px;
+	text-shadow: 0 0 1px rgba(0,0,0,0.2);
+	width: 450px;
+}
+
+.active {
+	background-color: #EEE;
+}
+.entry {
+	border: 1px solid #CCC;
+	border-top: none;
+	border-left-width: 5px;
+}
+.entry header {
+	cursor:pointer;
+	padding: 2px;
+}
+.entry header h1 {
+	font: bold 16px/1em ML-NILA01;
+	padding: 2px;
+	text-align: center;
+	text-shadow: none;
+}
+.entry header h3 {
+	font: normal 14px/1em ML-NILA03;
+	text-align: right;
+}
+.entry .summary {
+	display: none;
+	font: normal 15px/1.3em ML-NILA01;
+	margin: 6px;
+	text-align: left;
+}
+.hover {
+	background-color: #FFD;
+}
+.newpost {
+	background-color: #FEE;
+}
+.page {
+	display: none;
+}
+.readmore {
+	font: normal 14px/1em ML-NILA03;
+	text-align: right;
+}
+
+#head {
+	background-color: #CE6;
+	border-bottom: 1px solid #CCC;
+	padding: 5px;
+}
+#head h1{
+	font: normal 14px/1em ML-NILA03;
+}
+#head img {
+	float:left;
+	margin-right: 5px;
+}
+#nav {
+	background-color: #666;
+	color: #FFF;
+}
+#next {
+	text-align: right;
+	float: right;
+}
+#next img {
+	float: right;
+	margin-left: 5px;
+}
+#previous {
+	float: left;
+}
+#previous img {
+	float: left;
+	margin-right: 5px;
+}
+#previous, #next {
+	cursor: pointer;
+	display: none;
+	font: normal 14px/1em ML-NILA03;
+	padding: 5px;
+	width: 215px;
+}
+#update .loading {
+	cursor: default;
+	margin: 0 auto;
+	width: 85px;
+}
+#update .loading img {
+	float:left;
+}
+#update p {
+	cursor: pointer;
+	font: normal 14px/1em ML-NILA01;
+	padding: 5px;
+	text-align: center;
+}
+#update .loading {
+	display: none;
+}
