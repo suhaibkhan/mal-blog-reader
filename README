@@ -1,0 +1,5 @@
+Malayalam Blog Reader
+----------------------
+Malayalam Blog Reader is a Google chrome extension which can be used get notified about latest articles in blogs. As this extension is fully written in Malayalam language it is best suited for getting updates from Malayalam blogs. The extension fetches RSS feeds of the specified blogs in the blogs list and displays updates about the posts published on current date in your browser toolbar. Blogs can be added to and deleted from the blogs list as per user needs.
+
+This program comes with ABSOLUTELY NO WARRANTY; This is free software, and you are welcome to redistribute it under certain conditions; See COPYING file for details.
